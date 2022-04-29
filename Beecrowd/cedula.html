@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var prompt = function(texto) { return lines.shift();};
+ 
+ 
+ var N = parseInt(prompt("numero"));
+ 
+ var cem = parseInt(N / 100);
+ N = dias % 100;
+ 
+ var cinquenta = parseInt(N / 50);
+ N = dias % 50;
+ 
+ var vinte = parseInt(N / 20);
+ N = dias % 20;
+ 
+ var dez = parseInt(N / 10);
+ N = dias % 10;
+ 
+ var cinco = parseInt(N / 5);
+ N = dias % 5;
+ 
+ var dois = parseInt(N / 2);
+ N = dias % 2;
+ 
+ var um = parseInt(N / 1);
+ N = dias % 1;
+ 
+ var resultado = `
+ ${cem} ano(s)
+ ${cinquenta} mes(es)
+ ${vinte} dia(s)
+ ${dez} dia(s)
+ ${cinco} dia(s)
+ ${dois} dia(s) 
+ ${um} dia(s)`;
+ 
+ console.log(N);
+ console.log(cem +" nota(s) de R$ 100,00");
+ console.log(cinquenta +" nota(s) de R$ 50,00");
+ console.log(vinte +" nota(s) de R$ 20,00");
+ console.log(dez +" nota(s) de R$ 10,00");
+ console.log(cinco +" nota(s) de R$ 5,00");
+ console.log(dois +" nota(s) de R$ 2,00");
+ console.log(um +" nota(s) de R$ 1,00");
+  </script>
+</body>
+</html>

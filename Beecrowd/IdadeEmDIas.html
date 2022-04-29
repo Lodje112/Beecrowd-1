@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!--    
+    console.log(anos + " ano(s)");
+    console.log(meses + " mes(es)");
+    console.log(dias + " dia(s)");     --> 
+  <script>
+    var Dias1 = parseInt(prompt("Quantia de dias"));
+
+
+    var Anos = parseInt(Dias1 / 365);
+    Dias1 = Dias1 % 365;
+
+    var Meses = parseInt (Dias1 / 30);
+    Dias1 = Dias1 % 30;
+
+    var resultado = `          
+    ${Anos} ano(s)
+    ${Meses} mes(es)
+    ${Dias1} dia(s) `;
+
+    document.write(resultado);
+
+  </script>
+  
+</body>
+</html>

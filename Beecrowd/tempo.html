@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var N = parseInt(prompt("ó o N"));
+
+    var hora = parseInt(N / 3600);
+    N = N % 3600;
+    var minuto = parseInt(N / 60);
+    N = N % 60;
+    var segundo = parseInt(N / 1);
+
+    document.write(hora +":"+ minuto +":" + segundo);
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    Var = TotalEleitores, VotoBranco, VotoValido, VotoNulo
+
+    var VotoBranco = parseInt(prompt("Digite o Número total de Votos Brancos:"));
+    var VotoNulo = parseInt(prompt("Digite o Número total de Votos Nulo"));
+    var VotoValido = parseInt(prompt("Digite o Número total de Votos Validos:"));
+    var TotalEleitores = parseInt(prompt("Digite o Total de Eleitores:"));
+
+    var VBrancoPorcentagem = (VotoBranco / TotalEleitores) * 100
+    var VNuloPorcentagem = (VotoNulo / TotalEleitores) * 100
+    var VValidoPorcentagem = (VotoValido / TotalEleitores) * 100
+
+    document.write ("percentual votos em branco = " + VBrancoPorcentagem + "%")
+    document.write ("percentual votos nulos = " + VNuloPorcentagem + "%")
+    document.write ("percentual votos validos = " + VValidoPorcentagem + "%")
+
+  
+
+
+  </script>
+</body>
+</html>
